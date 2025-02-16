@@ -19,7 +19,7 @@ struct ContentView: View {
     func loadWeatherData() {
         print("Selam")
         
-        //
+        //Commit
 
         weatherService.fetchWeather(for: "London") { response in
                     self.weather = response
