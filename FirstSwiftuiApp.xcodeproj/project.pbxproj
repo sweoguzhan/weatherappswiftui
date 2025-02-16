@@ -14,6 +14,9 @@
 		3E4198C02D60E761005E99B2 /* FirstSwiftuiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4198BF2D60E761005E99B2 /* FirstSwiftuiAppTests.swift */; };
 		3E4198CA2D60E761005E99B2 /* FirstSwiftuiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4198C92D60E761005E99B2 /* FirstSwiftuiAppUITests.swift */; };
 		3E4198CC2D60E761005E99B2 /* FirstSwiftuiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4198CB2D60E761005E99B2 /* FirstSwiftuiAppUITestsLaunchTests.swift */; };
+		3E436F872D61647800D2A80B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E436F862D61647800D2A80B /* Button.swift */; };
+		3E436F8A2D61674400D2A80B /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E436F892D61674400D2A80B /* WeatherData.swift */; };
+		3E436F8D2D6167F400D2A80B /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E436F8C2D6167F400D2A80B /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		3E4198C52D60E761005E99B2 /* FirstSwiftuiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstSwiftuiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4198C92D60E761005E99B2 /* FirstSwiftuiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSwiftuiAppUITests.swift; sourceTree = "<group>"; };
 		3E4198CB2D60E761005E99B2 /* FirstSwiftuiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSwiftuiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E436F862D61647800D2A80B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		3E436F892D61674400D2A80B /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		3E436F8C2D6167F400D2A80B /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		3E436F902D61804600D2A80B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,9 @@
 		3E4198AD2D60E760005E99B2 /* FirstSwiftuiApp */ = {
 			isa = PBXGroup;
 			children = (
+				3E436F902D61804600D2A80B /* Info.plist */,
+				3E436F882D61673500D2A80B /* Service */,
+				3E436F852D61646A00D2A80B /* Components */,
 				3E4198AE2D60E760005E99B2 /* FirstSwiftuiAppApp.swift */,
 				3E4198B02D60E760005E99B2 /* ContentView.swift */,
 				3E4198B22D60E761005E99B2 /* Assets.xcassets */,
@@ -125,6 +135,23 @@
 				3E4198CB2D60E761005E99B2 /* FirstSwiftuiAppUITestsLaunchTests.swift */,
 			);
 			path = FirstSwiftuiAppUITests;
+			sourceTree = "<group>";
+		};
+		3E436F852D61646A00D2A80B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3E436F862D61647800D2A80B /* Button.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3E436F882D61673500D2A80B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3E436F892D61674400D2A80B /* WeatherData.swift */,
+				3E436F8C2D6167F400D2A80B /* WeatherService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E436F8D2D6167F400D2A80B /* WeatherService.swift in Sources */,
+				3E436F8A2D61674400D2A80B /* WeatherData.swift in Sources */,
 				3E4198B12D60E760005E99B2 /* ContentView.swift in Sources */,
+				3E436F872D61647800D2A80B /* Button.swift in Sources */,
 				3E4198AF2D60E760005E99B2 /* FirstSwiftuiAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +454,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FirstSwiftuiApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FirstSwiftuiApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +483,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FirstSwiftuiApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FirstSwiftuiApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
