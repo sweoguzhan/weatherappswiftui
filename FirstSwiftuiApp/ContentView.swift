@@ -19,7 +19,7 @@ struct ContentView: View {
     func loadWeatherData() {
         print("Selam")
         
-        //Push Control Ediyorum
+        //
 
         weatherService.fetchWeather(for: "London") { response in
                     self.weather = response
